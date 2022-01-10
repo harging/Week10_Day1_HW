@@ -15,4 +15,18 @@ public class CalculatorTests {
     public void canAdd(){
         assertEquals(10, calculator.add(6, 4));
     }
+
+    @Test
+    public void canSubtract(){
+        assertEquals(10, calculator.subtract(20, 10));
+    }
+    @Test
+    public void canMultiply(){
+        assertEquals(10, calculator.multiply(2, 5));
+    }
+
+    @Test
+    public void canDivide(){
+        assertEquals(10, calculator.divide(20, 2), 0.0);
+    }
 }
